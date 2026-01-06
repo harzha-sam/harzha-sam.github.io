@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website of Harsha Mudalige</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="icon" href="#">
+    <meta name="description" content="Programmer | Studying in softatware engineering of Open University of Sri Lanka">
+</head>
+<body>
+    <div class="container bg-img">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><span>H$M</span> </a>
+            </div>
+		<div class="menu-icon" onclick="toggleMenu()">
+  		  <i class="fas fa-bars"></i>
+		</div>
+            <div class="navbar">
+                <ul class="nav">
+                    <li><a class="active" href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Service</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="">Blogs</a></li> -->
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-text">
+                <h6>Hello, I'm</h6>
+                <h2 class="harsha mudalige">Harsha Mudalige</h2>
+                <h3 class="sengelect">Software Engineer Undergraduate</h3>
+                <p class="loram">.................</p>
+                <div class="cv-btn">
+                    <a href="Harsha Mudalige CV.pdf" target="_blank"><i class="fa fa-cloud-download" aria-hidden="true"></i> View CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------about---------->
+    <div class="about" id="about">
+         <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="img/About me.jpg" alt="image of Harsha">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About  Me</h1>
+                    <p>I am a Software Engineering undergraduate who enjoys coding, solving problems, and creating digital solutions. I also have a passion for electronic lighting and sound system branding, where I design creative setups for interior rooms and pursonal places. I love exploring both the technical and creative sides of my interests and bringing them together in meaningful ways.</p>
+                    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Progamming Languages</span>
+                                <br>HTML, CSS, JavaScript
+                                <br>JAVA, Python
+                            </li>
+                            <li><span>UI/UX</span>
+                                <br>Tools - figma, Bulsamiq
+                            </li>
+                            <li><span>Web Development</span>
+                                <br>Framework - Angular, Reactjs, ASP.NET </li>
+                            <li><span>App Development</span>
+                                <br>Framework - ReactNative
+                                <br>Tools - Android Studio</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High Study - The Open University of Sri Lanka</span>
+                                <br>Software Engineering Undergraduate
+                                <br></li>
+                            <li><span>Advance Level - Rajapaksha Central Collage - Weeraketiya</span>
+                                <br>Combine Mathematics-C 
+                                <br>Physics-S 
+                                <br>Chemistry-C</li>
+                            <li><span>Ordenary Level - Rajapaksha Central Collage - Weeraketiya</span>
+                                <br>7As 2Bs 1C</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Looking for Intern</span></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <!---------------Services-------------------->
+
+    <!-- <div class="services" id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic commodi, magni laboriosam ipsam nisi nihil repudiandae sapiente, possimus praesentium excepturi doloribus laborum totam et architecto dolore perspiciatis maxime culpa mollitia!</p>
+                    <a href="#">Lern more ></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic commodi, magni laboriosam ipsam nisi nihil repudiandae sapiente, possimus praesentium excepturi doloribus laborum totam et architecto dolore perspiciatis maxime culpa mollitia!</p>
+                    <a href="#">Lern more ></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>Small Electronic Project</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic commodi, magni laboriosam ipsam nisi nihil repudiandae sapiente, possimus praesentium excepturi doloribus laborum totam et architecto dolore perspiciatis maxime culpa mollitia!</p>
+                    <a href="#">Lern more ></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!---------Portfolio------------>
+    <div class="portfolio" id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/programmer.png">
+                    <div class="layer">
+                        <h3>Websites</h3>
+                        <p>Spread you in whole world</p>
+                        <a href="https://github.com/harzha-sam" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/app.jpg">
+                    <div class="layer">
+                        <h3>Mobile App</h3>
+                        <p>Shopping app for make eazy your business</p>
+                        <a href="https://github.com/harzha-sam" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/board.jpg">
+                    <div class="layer">
+                        <h3>Electronic system</h3>
+                        <p>All kind of light and sound system</p>
+                        <a href="https://www.eyenearelectronics.lk/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="btn">
+                <a href="#">see more >></a>
+            </div>-->
+        </div>
+    </div>
+
+    <!---------------Contact-------------------->
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row2">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="far fa-envelope"></i>harsha98sampath@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i>linkedIN</p>
+                    <p><i class="fas fa-phone-alt"></i>GitHub</p>
+                    <p><i class="fas fa-phone-alt"></i>+94765509544</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="/warning.html"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="btn btn2">
+                        <a href="Harsha Mudalige CV.pdf" download>Downlaod CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Type Your Name" required>
+                        <input type="email" name="Email" placeholder="Type Your Email Address" required>
+                        <textarea name="Massage" rows="6" placeholder="Type your massage"></textarea>
+                        <button type="submit"class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="copyright">
+            	<p><span>© 2022–2026 SAM M™.</span> All rights reserved.</p>
+		<p>SAM M is the personal brand of Harsha Mudalige.</p>
+		<p>Designed & Developed by <span>Harsha Mudalige.</span></p>
+        </div>
+    </div>
+
+
+
+
+    <!------------style------------->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+	
+	function toggleMenu(){
+        document.querySelector(".navbar").classList.toggle("active");
+    	}
+
+	// AUTO CLOSE MENU AFTER CLICK
+   	document.querySelectorAll(".nav a").forEach(link => {
+        link.addEventListener("click", () => {
+            document.querySelector(".navbar").classList.remove("active");
+      		  });
+  	  });
+    </script>
+</body>
+</html>
